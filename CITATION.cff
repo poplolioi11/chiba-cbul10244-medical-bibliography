@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "Cite this dataset version and the holding library source."
+type: dataset
+title: "醫家著述目錄（千葉大學附屬圖書館亥鼻分館 DIG-CBUL-10244／59521） / Ikachojitsumokuroku [Catalogue of Medical Authors’ Writings]: Transcription Dataset"
+version: "0.1.0"
+date-released: "2026-11-19"
+authors:
+  - family-names: Chu
+    given-names: Chen-Yu
+    orcid: "https://orcid.org/0009-0003-9738-6914"
+keywords:
+  - "醫家著述目錄"
+  - "渥見忠篤"
+  - "元治増補御書籍目録"
+  - "江戶時代"
+  - "漢文醫籍"
+  - "醫學書目"
+  - "刻本與抄本"
+  - "Japanese medical history"
+  - "Chinese medical bibliography"
+  - "Edo-period manuscript"
+  - "textual circulation"
+  - "digital humanities"
+  - "TEI XML"
+identifiers:
+  - type: doi
+    value: "10.20730/300054644"
+    description: "DOI of the source manuscript at NIJL"
