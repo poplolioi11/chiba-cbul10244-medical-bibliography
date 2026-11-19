@@ -18,3 +18,13 @@ Digital source provided by Chiba University Library, Inohana Branch, and served 
 ## 引用 · Citation
 
 Chu, Chen-Yu. 2026. *醫家著述目錄 / Ikachojitsumokuroku [Catalogue of Medical Authors’ Writings]*. Transcription Dataset, v0.2.0. Source manuscript at Chiba University Library, Inohana Branch, DIG-CBUL-10244 (59521). [Source record](https://doi.org/10.20730/300054644)
+
+## 公開版本與引用 · Public editions
+
+- [Zenodo 固定版 v0.2.0](https://doi.org/10.5281/zenodo.24364091)
+- [Zenodo 版本總入口](https://doi.org/10.5281/zenodo.24363415)
+- [GitHub 固定版 v0.2.0](https://github.com/poplolioi11/chiba-cbul10244-medical-bibliography/releases/tag/v0.2.0)
+- [中文維基文庫原文](https://zh.wikisource.org/wiki/Special:PermanentLink/13115891)
+- [古中國醫學史文獻轉錄資料社群](https://zenodo.org/communities/late-qing-medical-history)
+
+請用固定版本 ZIP 內的 `SHA256SUMS` 核對封存檔。主分支的說明及引用資料可隨 DOI 登記更新。
