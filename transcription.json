@@ -7,7 +7,7 @@
     "name": "曲宸宇 / Chen-Yu Chu",
     "orcid": "https://orcid.org/0009-0003-9738-6914"
   },
-  "version": "0.1.0",
+  "version": "0.2.0",
   "language": [
     "lzh",
     "eng"
@@ -36,8 +36,8 @@
     "human_full_proofreading": false,
     "added_punctuation": false
   },
-  "stage": "image-first-reading",
-  "quality": "AI 影像初錄，逐幅辨識後保留疑項，獨立校讀及人工校對待核。",
+  "stage": "paired-image-review",
+  "quality": "全冊 37 幅經兩份獨立的 AI 影像讀稿比對，歧讀回查原圖，待辨處仍有標記。尚待人工全文校對。",
   "statistics": {
     "frames": 37,
     "parts": 71,
@@ -47,13 +47,13 @@
       "content": 59
     },
     "column_kinds": {
-      "heading": 8,
+      "heading": 9,
       "entry": 461,
       "subtotal": 24,
       "note": 13
     },
-    "unresolved_first_reading_issues": 81,
-    "body_codepoints_excluding_tabs": 7282
+    "body_codepoints_excluding_tabs": 7281,
+    "open_reading_notes": 50
   },
   "pages": [
     {
@@ -171,25 +171,45 @@
               "text": "渥見忠篤撰"
             },
             {
-              "index": 4,
+              "index": 5,
               "kind": "heading",
-              "id": "f003-L-c04",
+              "id": "f003-L-c05",
               "cells": {
-                "title": "元治増補御書籍目録",
+                "title": "元治",
                 "volumes": "",
                 "fascicles": "",
                 "responsibility": ""
               },
               "cell_fragments": {
                 "title": [
-                  "元治",
-                  "増補御書籍目録"
+                  "元治"
                 ],
                 "volumes": [],
                 "fascicles": [],
                 "responsibility": []
               },
-              "text": "元治増補御書籍目録"
+              "text": "元治"
+            },
+            {
+              "index": 6,
+              "kind": "heading",
+              "id": "f003-L-c06",
+              "cells": {
+                "title": "増補御書籍目録",
+                "volumes": "",
+                "fascicles": "",
+                "responsibility": ""
+              },
+              "cell_fragments": {
+                "title": [
+                  "増補",
+                  "御書籍目録"
+                ],
+                "volumes": [],
+                "fascicles": [],
+                "responsibility": []
+              },
+              "text": "増補御書籍目録"
             },
             {
               "index": 7,
@@ -239,15 +259,15 @@
           "blank_columns": [
             1,
             2,
-            5,
-            6,
+            4,
             8,
             9,
             10
           ],
           "text": [
             "渥見忠篤撰",
-            "元治増補御書籍目録",
+            "元治",
+            "増補御書籍目録",
             "醫家類"
           ]
         }
@@ -282,19 +302,19 @@
               ""
             ],
             [
-              "元治増補御書籍目録",
-              "",
-              "",
-              ""
-            ],
-            [
               "",
               "",
               "",
               ""
             ],
             [
+              "元治",
               "",
+              "",
+              ""
+            ],
+            [
+              "増補御書籍目録",
               "",
               "",
               ""
@@ -328,9 +348,9 @@
             "blank",
             "blank",
             "heading",
+            "blank",
             "heading",
-            "blank",
-            "blank",
+            "heading",
             "heading",
             "blank",
             "blank",
@@ -499,14 +519,14 @@
               "kind": "entry",
               "id": "f004-L-c06",
               "cells": {
-                "title": "素問靈枢缺文",
+                "title": "素問靈枢釈文",
                 "volumes": "十二巻",
                 "fascicles": "六〃",
                 "responsibility": "隋全元起解唐王冰註"
               },
               "cell_fragments": {
                 "title": [
-                  "素問靈枢缺文"
+                  "素問靈枢釈文"
                 ],
                 "volumes": [
                   "十二巻"
@@ -519,7 +539,7 @@
                   "唐王冰註"
                 ]
               },
-              "text": "素問靈枢缺文\t十二巻\t六〃\t隋全元起解唐王冰註"
+              "text": "素問靈枢釈文\t十二巻\t六〃\t隋全元起解唐王冰註"
             },
             {
               "index": 7,
@@ -638,6 +658,11 @@
               "layer": "square-seal",
               "text": "東洋醫學研究室",
               "state": "first-reading"
+            },
+            {
+              "layer": "marginal-addition",
+              "text": "。",
+              "state": "image-observed"
             }
           ],
           "issues": [
@@ -660,6 +685,16 @@
               "offset": 7,
               "count": 1,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 0,
+              "field": "paratext",
+              "excerpt": "圓印判讀待覆核",
+              "candidate": "千葉醫科大學圖書之印",
+              "reason": "紅印篆字跨表框與原文，不作確讀",
+              "offset": null,
+              "count": null,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -669,7 +704,7 @@
             "医家類",
             "重廣補註内経素問\t二十四巻宋板覆刻\t十二冊\t唐王冰撰",
             "素問直解\t九巻\t八〃\t清高世栻〃",
-            "素問靈枢缺文\t十二巻\t六〃\t隋全元起解唐王冰註",
+            "素問靈枢釈文\t十二巻\t六〃\t隋全元起解唐王冰註",
             "素問靈枢類纂約註\t三巻\t四〃\t清汪昂編",
             "内経知要\t二〃\t二〃\t明李中梓撰",
             "内経集註\t素問九巻靈枢九〃\t二十〃\t清張志聰〃",
@@ -803,7 +838,7 @@
               "清高世栻〃"
             ],
             [
-              "素問靈枢缺文",
+              "素問靈枢釈文",
               "十二巻",
               "六〃",
               "隋全元起解唐王冰註"
@@ -1151,7 +1186,7 @@
                 "title": "医経正宗",
                 "volumes": "八〃",
                 "fascicles": "八〃",
-                "responsibility": "明虞搏〃"
+                "responsibility": "明虞博〃"
               },
               "cell_fragments": {
                 "title": [
@@ -1164,10 +1199,10 @@
                   "八〃"
                 ],
                 "responsibility": [
-                  "明虞搏〃"
+                  "明虞博〃"
                 ]
               },
-              "text": "医経正宗\t八〃\t八〃\t明虞搏〃"
+              "text": "医経正宗\t八〃\t八〃\t明虞博〃"
             },
             {
               "index": 7,
@@ -1285,16 +1320,6 @@
               "offset": 2,
               "count": 1,
               "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 6,
-              "field": "responsibility",
-              "excerpt": "搏",
-              "candidate": "博",
-              "reason": "右件豎與點待回圖",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
             }
           ],
           "blank_columns": [],
@@ -1304,7 +1329,7 @@
             "人鏡経\t八巻附録二巻\t三〃\t不著撰人",
             "三因極一病証方論\t十八巻古写本\t七〃\t宋陳言撰",
             "医経溯洄集\t一巻\t一〃\t元王履〃",
-            "医経正宗\t八〃\t八〃\t明虞搏〃",
+            "医経正宗\t八〃\t八〃\t明虞博〃",
             "医経金元\t十〃\t十〃\t明呉嘉言〃",
             "医経小學\t六〃\t四〃\t明劉純〃",
             "医経会解\t八〃\t六〃\t明鄧景儀〃",
@@ -1441,7 +1466,7 @@
               "医経正宗",
               "八〃",
               "八〃",
-              "明虞搏〃"
+              "明虞博〃"
             ],
             [
               "医経金元",
@@ -1746,7 +1771,7 @@
                 "title": "医学三書論",
                 "volumes": "一巻",
                 "fascicles": "一〃",
-                "responsibility": "清沈棣懷〃"
+                "responsibility": "清沈棟懷〃"
               },
               "cell_fragments": {
                 "title": [
@@ -1759,40 +1784,20 @@
                   "一〃"
                 ],
                 "responsibility": [
-                  "清沈棣懷〃"
+                  "清沈棟懷〃"
                 ]
               },
-              "text": "医学三書論\t一巻\t一〃\t清沈棣懷〃"
+              "text": "医学三書論\t一巻\t一〃\t清沈棟懷〃"
             }
           ],
           "observed_paratext": [],
           "issues": [
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "刪",
-              "candidate": "刊",
-              "reason": "書寫中間指狀待核",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
             {
               "column_index": 9,
               "field": "responsibility",
               "excerpt": "懋",
               "candidate": "懋／懲",
               "reason": "中段淡筆",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 10,
-              "field": "responsibility",
-              "excerpt": "棣",
-              "candidate": "棣／橃",
-              "reason": "中字右半混筆",
               "offset": 2,
               "count": 1,
               "state": "unresolved-first-reading"
@@ -1809,7 +1814,7 @@
             "医師秘笈\t二〃附湿條弁一巻\t二〃\t不著撰人",
             "易簡方論\t六巻\t十二〃\t清程履新撰",
             "医学要則\t四巻附一巻\t四〃\t清沈懋官〃",
-            "医学三書論\t一巻\t一〃\t清沈棣懷〃"
+            "医学三書論\t一巻\t一〃\t清沈棟懷〃"
           ]
         },
         {
@@ -1949,7 +1954,7 @@
               "医学三書論",
               "一巻",
               "一〃",
-              "清沈棣懷〃"
+              "清沈棟懷〃"
             ]
           ],
           "row_kinds": [
@@ -2358,16 +2363,6 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 4,
-              "field": "volumes",
-              "excerpt": "西",
-              "candidate": "西／四",
-              "reason": "橫畫壓在豎筆上",
-              "offset": 7,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
               "column_index": 5,
               "field": "responsibility",
               "excerpt": "潔",
@@ -2376,6 +2371,16 @@
               "offset": 3,
               "count": 1,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 7,
+              "field": "volumes",
+              "excerpt": "撮",
+              "candidate": "撮／操",
+              "reason": "四巻下與界線內墨污相接，一字右側末筆有重線",
+              "offset": 2,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -2812,7 +2817,7 @@
                 "title": "医説",
                 "volumes": "十〃",
                 "fascicles": "",
-                "responsibility": "宋張杲撰"
+                "responsibility": "宋張景撰"
               },
               "cell_fragments": {
                 "title": [
@@ -2823,10 +2828,10 @@
                 ],
                 "fascicles": [],
                 "responsibility": [
-                  "宋張杲撰"
+                  "宋張景撰"
                 ]
               },
-              "text": "医説\t十〃\t\t宋張杲撰"
+              "text": "医説\t十〃\t\t宋張景撰"
             },
             {
               "index": 9,
@@ -2900,7 +2905,7 @@
             "養生月覽\t二巻写本\t\t宋周守忠〃",
             "壽親養老新書\t四巻韓板\t\t元鄒鉉編",
             "安老懐幼書\t四巻\t\t明劉宇〃",
-            "医説\t十〃\t\t宋張杲撰",
+            "医説\t十〃\t\t宋張景撰",
             "活法機要\t一〃\t\t金李杲〃",
             "医壘元戎\t十二巻写本\t\t元王好古〃"
           ]
@@ -3047,7 +3052,7 @@
               "医説",
               "十〃",
               "",
-              "宋張杲撰"
+              "宋張景撰"
             ],
             [
               "活法機要",
@@ -3646,21 +3651,11 @@
           "observed_paratext": [
             {
               "layer": "marginal-addition",
-              "text": "。学",
-              "state": "first-reading"
+              "text": "。",
+              "state": "image-observed"
             }
           ],
           "issues": [
-            {
-              "column_index": 2,
-              "field": "title",
-              "excerpt": "滙",
-              "candidate": "滙／匯",
-              "reason": "水旁與框線左件待核",
-              "offset": 1,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
             {
               "column_index": 2,
               "field": "responsibility",
@@ -3682,14 +3677,14 @@
               "state": "unresolved-first-reading"
             },
             {
-              "column_index": 9,
-              "field": "title",
-              "excerpt": "医術指南",
-              "candidate": "医学指南",
-              "reason": "欄外見小圈和學字疑作覆字，暫分層",
-              "offset": 0,
-              "count": 4,
-              "state": "unresolved-first-reading"
+              "column_index": 3,
+              "field": "responsibility",
+              "excerpt": "徴",
+              "candidate": "徴／徹／微",
+              "reason": "左彳右攵清楚，中間垂筆與橫畫無法判定",
+              "offset": 2,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -3957,7 +3952,7 @@
                 "title": "医学源流",
                 "volumes": "十六巻",
                 "fascicles": "十〃",
-                "responsibility": "明虞博編忘奎補遺"
+                "responsibility": "明虞博編応奎補遺"
               },
               "cell_fragments": {
                 "title": [
@@ -3971,10 +3966,10 @@
                 ],
                 "responsibility": [
                   "明虞博編",
-                  "忘奎補遺"
+                  "応奎補遺"
                 ]
               },
-              "text": "医学源流\t十六巻\t十〃\t明虞博編忘奎補遺"
+              "text": "医学源流\t十六巻\t十〃\t明虞博編応奎補遺"
             },
             {
               "index": 4,
@@ -3984,7 +3979,7 @@
                 "title": "増補医学源流",
                 "volumes": "六巻首一巻",
                 "fascicles": "八〃",
-                "responsibility": "明聶尚恒撰"
+                "responsibility": "明呉尚恒撰"
               },
               "cell_fragments": {
                 "title": [
@@ -3998,10 +3993,10 @@
                   "八〃"
                 ],
                 "responsibility": [
-                  "明聶尚恒撰"
+                  "明呉尚恒撰"
                 ]
               },
-              "text": "増補医学源流\t六巻首一巻\t八〃\t明聶尚恒撰"
+              "text": "増補医学源流\t六巻首一巻\t八〃\t明呉尚恒撰"
             },
             {
               "index": 5,
@@ -4166,16 +4161,6 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 1,
-              "field": "title",
-              "excerpt": "衝",
-              "candidate": "衝／衡",
-              "reason": "中間細筆",
-              "offset": 4,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
               "column_index": 3,
               "field": "responsibility",
               "excerpt": "忘奎",
@@ -4184,34 +4169,14 @@
               "offset": 4,
               "count": 2,
               "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 4,
-              "field": "responsibility",
-              "excerpt": "聶",
-              "candidate": "聶／栗",
-              "reason": "上段速寫",
-              "offset": 1,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 6,
-              "field": "title",
-              "excerpt": "彙",
-              "candidate": "彙／彚",
-              "reason": "冖旁略簡",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
             }
           ],
           "blank_columns": [],
           "text": [
             "医学入門衝要\t六巻\t六冊\t明洪正立編",
             "医学正傳\t八巻附本草大成薬草賦五巻\t十〃\t明虞博撰",
-            "医学源流\t十六巻\t十〃\t明虞博編忘奎補遺",
-            "増補医学源流\t六巻首一巻\t八〃\t明聶尚恒撰",
+            "医学源流\t十六巻\t十〃\t明虞博編応奎補遺",
+            "増補医学源流\t六巻首一巻\t八〃\t明呉尚恒撰",
             "医術方旨\t八巻首一巻\t八〃\t同",
             "医学彙函\t七巻首一巻\t十四〃\t同",
             "医学原理\t十三巻首二巻\t六〃\t明汪機撰",
@@ -4544,13 +4509,13 @@
               "医学源流",
               "十六巻",
               "十〃",
-              "明虞博編忘奎補遺"
+              "明虞博編応奎補遺"
             ],
             [
               "増補医学源流",
               "六巻首一巻",
               "八〃",
-              "明聶尚恒撰"
+              "明呉尚恒撰"
             ],
             [
               "医術方旨",
@@ -4971,18 +4936,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "刪",
-              "candidate": "刪／刊",
-              "reason": "寫法待核",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "証治準縄\t四十四巻\t八十二冊\t明王肯堂撰",
@@ -5269,21 +5223,11 @@
           "observed_paratext": [
             {
               "layer": "marginal-addition",
-              "text": "。四冊　。十冊",
-              "state": "first-reading"
+              "text": "。　。",
+              "state": "image-observed"
             }
           ],
           "issues": [
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "粹",
-              "candidate": "粹／粋",
-              "reason": "右件略筆",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
             {
               "column_index": 10,
               "field": "title",
@@ -5293,6 +5237,16 @@
               "offset": 0,
               "count": 1,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 10,
+              "field": "title",
+              "excerpt": "斎",
+              "candidate": "斎／春",
+              "reason": "蓋下字有中央疊筆和兩斜捺，與 f012-R-c01 相近",
+              "offset": 1,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -5764,26 +5718,6 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 2,
-              "field": "title",
-              "excerpt": "殻",
-              "candidate": "殻／彀",
-              "reason": "右部反文略寫",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "殻",
-              "candidate": "殻／彀",
-              "reason": "右部反文略寫",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
               "column_index": 9,
               "field": "volumes",
               "excerpt": "淵",
@@ -5792,6 +5726,16 @@
               "offset": 3,
               "count": 1,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 1,
+              "field": "title",
+              "excerpt": "春",
+              "candidate": "春／斎",
+              "reason": "程下字似斜捺向下分開，與 f011-L-c10、f017-L-c06 的齋形需再辨",
+              "offset": 1,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -6079,18 +6023,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 8,
-              "field": "title",
-              "excerpt": "彙",
-              "candidate": "彙／彚",
-              "reason": "上部辨寫",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "景岳全書\t六十四巻\t四十八冊\t明張介賓撰",
@@ -6569,6 +6502,16 @@
               "offset": 4,
               "count": 1,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 2,
+              "field": "title",
+              "excerpt": "正",
+              "candidate": "正／生／丘",
+              "reason": "乾坤下字用筆極省，橫末下勾，正和生不能憑詞意判決",
+              "offset": 2,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -6649,14 +6592,14 @@
               "kind": "entry",
               "id": "f013-L-c03",
               "cells": {
-                "title": "魁生的鏡",
+                "title": "甦生的鏡",
                 "volumes": "八巻首一巻補一巻",
                 "fascicles": "六〃",
                 "responsibility": "明蔡正言〃"
               },
               "cell_fragments": {
                 "title": [
-                  "魁生的鏡"
+                  "甦生的鏡"
                 ],
                 "volumes": [
                   "八巻",
@@ -6669,7 +6612,7 @@
                   "明蔡正言〃"
                 ]
               },
-              "text": "魁生的鏡\t八巻首一巻補一巻\t六〃\t明蔡正言〃"
+              "text": "甦生的鏡\t八巻首一巻補一巻\t六〃\t明蔡正言〃"
             },
             {
               "index": 4,
@@ -6757,14 +6700,14 @@
               "kind": "entry",
               "id": "f013-L-c07",
               "cells": {
-                "title": "医確",
+                "title": "医碥",
                 "volumes": "七巻",
                 "fascicles": "六〃",
                 "responsibility": "清何夢瑶〃"
               },
               "cell_fragments": {
                 "title": [
-                  "医確"
+                  "医碥"
                 ],
                 "volumes": [
                   "七巻"
@@ -6776,7 +6719,7 @@
                   "清何夢瑶〃"
                 ]
               },
-              "text": "医確\t七巻\t六〃\t清何夢瑶〃"
+              "text": "医碥\t七巻\t六〃\t清何夢瑶〃"
             },
             {
               "index": 8,
@@ -6858,37 +6801,16 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "魁",
-              "candidate": "魁／甦／魋",
-              "reason": "第一字輪廓與右旁待核",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 6,
-              "field": "responsibility",
-              "excerpt": "女",
-              "candidate": "女／乂",
-              "reason": "末字近交叉",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "先醒斎筆記\t十二巻\t二冊\t明了元薦編",
             "丹台玉案\t六巻\t六〃\t明孫文胤撰",
-            "魁生的鏡\t八巻首一巻補一巻\t六〃\t明蔡正言〃",
+            "甦生的鏡\t八巻首一巻補一巻\t六〃\t明蔡正言〃",
             "医説佛乗\t一巻\t一〃\t明盧万鍾〃",
             "医宗金鑑\t九十巻首一巻\t六十四〃\t清乾隆帝纂定鄂爾泰等撰",
             "医級\t十巻首一巻末一巻\t十二〃\t清董魏女撰",
-            "医確\t七巻\t六〃\t清何夢瑶〃",
+            "医碥\t七巻\t六〃\t清何夢瑶〃",
             "医学心悟\t六〃\t四〃\t清程国彭〃",
             "医学集要\t九〃\t四〃\t清朱鳳台〃",
             "医門法律\t六〃\t十〃\t清喩昌〃"
@@ -7003,7 +6925,7 @@
               "明孫文胤撰"
             ],
             [
-              "魁生的鏡",
+              "甦生的鏡",
               "八巻首一巻補一巻",
               "六〃",
               "明蔡正言〃"
@@ -7027,7 +6949,7 @@
               "清董魏女撰"
             ],
             [
-              "医確",
+              "医碥",
               "七巻",
               "六〃",
               "清何夢瑶〃"
@@ -7349,28 +7271,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 5,
-              "field": "volumes",
-              "excerpt": "印機草",
-              "candidate": "印機草／即機草",
-              "reason": "細字與書名偏旁待核",
-              "offset": 4,
-              "count": 3,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 8,
-              "field": "responsibility",
-              "excerpt": "昣",
-              "candidate": "昣／眕",
-              "reason": "日旁罕字辨覆",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "医方集解\t三巻\t四冊\t清汪昂撰",
@@ -7602,26 +7503,6 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 2,
-              "field": "responsibility",
-              "excerpt": "登元",
-              "candidate": "登元／登原",
-              "reason": "末字略寫",
-              "offset": 2,
-              "count": 2,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "径",
-              "candidate": "径／経",
-              "reason": "左側草筆短",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
               "column_index": 5,
               "field": "title",
               "excerpt": "良明",
@@ -7630,6 +7511,16 @@
               "offset": 0,
               "count": 2,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 5,
+              "field": "title",
+              "excerpt": "明",
+              "candidate": "明／朋",
+              "reason": "第二字左件有日形框但內細橫近月，單據影像仍待定",
+              "offset": 1,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [
@@ -8503,14 +8394,14 @@
               "kind": "entry",
               "id": "f016-L-c03",
               "cells": {
-                "title": "証石山医学七書",
+                "title": "汪石山医学七書",
                 "volumes": "二十一巻",
                 "fascicles": "十二〃",
                 "responsibility": "明汪機撰"
               },
               "cell_fragments": {
                 "title": [
-                  "証石山医学七書"
+                  "汪石山医学七書"
                 ],
                 "volumes": [
                   "二十一巻"
@@ -8522,7 +8413,7 @@
                   "明汪機撰"
                 ]
               },
-              "text": "証石山医学七書\t二十一巻\t十二〃\t明汪機撰"
+              "text": "汪石山医学七書\t二十一巻\t十二〃\t明汪機撰"
             },
             {
               "index": 4,
@@ -8706,16 +8597,6 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "証",
-              "candidate": "証／汪",
-              "reason": "右旁可見正字上橫疑",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
               "column_index": 5,
               "field": "volumes",
               "excerpt": "瘟",
@@ -8730,7 +8611,7 @@
           "text": [
             "合刻医書八種\t八巻\t六冊\t不著編人",
             "東垣十書\t十九巻\t十〃\t同",
-            "証石山医学七書\t二十一巻\t十二〃\t明汪機撰",
+            "汪石山医学七書\t二十一巻\t十二〃\t明汪機撰",
             "家居医録\t内科摘要二巻口齒類要一〃\t三〃\t明薛己〃",
             "別本家居医録\t瘟瘡方論一〃保嬰粹要一〃\t二〃\t同",
             "\t癘瘍機要一〃\t\t",
@@ -8849,7 +8730,7 @@
               "同"
             ],
             [
-              "証石山医学七書",
+              "汪石山医学七書",
               "二十一巻",
               "十二〃",
               "明汪機撰"
@@ -8935,14 +8816,14 @@
               "kind": "entry",
               "id": "f017-R-c01",
               "cells": {
-                "title": "萬密斎全書",
+                "title": "萬蜜斎全書",
                 "volumes": "百八巻",
                 "fascicles": "十六冊",
-                "responsibility": "明萬全撰"
+                "responsibility": "明万全撰"
               },
               "cell_fragments": {
                 "title": [
-                  "萬密斎全書"
+                  "萬蜜斎全書"
                 ],
                 "volumes": [
                   "百八巻"
@@ -8951,10 +8832,10 @@
                   "十六冊"
                 ],
                 "responsibility": [
-                  "明萬全撰"
+                  "明万全撰"
                 ]
               },
-              "text": "萬密斎全書\t百八巻\t十六冊\t明萬全撰"
+              "text": "萬蜜斎全書\t百八巻\t十六冊\t明万全撰"
             },
             {
               "index": 2,
@@ -9205,11 +9086,31 @@
               "offset": 1,
               "count": 1,
               "state": "unresolved-first-reading"
+            },
+            {
+              "column_index": 2,
+              "field": "volumes",
+              "excerpt": "甘",
+              "candidate": "甘／廿",
+              "reason": "左列首字中間橫最淡，不能完全排除廿",
+              "offset": 3,
+              "count": 1,
+              "state": "unresolved-after-image-review"
+            },
+            {
+              "column_index": 3,
+              "field": "title",
+              "excerpt": "己仕",
+              "candidate": "己仕／已仕／己任",
+              "reason": "首字內口是否封合難判，仕右部上下橫皆可見",
+              "offset": 0,
+              "count": 2,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
           "text": [
-            "萬密斎全書\t百八巻\t十六冊\t明萬全撰",
+            "萬蜜斎全書\t百八巻\t十六冊\t明万全撰",
             "又\t百八巻甘珍板\t三十二〃\t同",
             "己仕編\t八巻\t四〃\t明楊乗六編",
             "青囊雑纂\t九〃写本\t九〃\t不著撰人",
@@ -9419,7 +9320,7 @@
                 "title": "医学補天石三種合刻",
                 "volumes": "七巻",
                 "fascicles": "六〃",
-                "responsibility": "清尤怡〃才維城〃"
+                "responsibility": "清尤怡才維城〃"
               },
               "cell_fragments": {
                 "title": [
@@ -9432,11 +9333,11 @@
                   "六〃"
                 ],
                 "responsibility": [
-                  "清尤怡〃",
+                  "清尤怡",
                   "才維城〃"
                 ]
               },
-              "text": "医学補天石三種合刻\t七巻\t六〃\t清尤怡〃才維城〃"
+              "text": "医学補天石三種合刻\t七巻\t六〃\t清尤怡才維城〃"
             },
             {
               "index": 9,
@@ -9492,28 +9393,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 6,
-              "field": "title",
-              "excerpt": "醴",
-              "candidate": "醴／體",
-              "reason": "左件酉或骨",
-              "offset": 1,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 8,
-              "field": "responsibility",
-              "excerpt": "才",
-              "candidate": "才／于",
-              "reason": "左小列首字",
-              "offset": 4,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "医書六種\t十六巻\t十冊\t清徐大椿撰",
@@ -9523,7 +9403,7 @@
             "証治大還\t四十三巻\t二十八〃\t清陳治〃",
             "六醴斎医書\t五十五巻\t十六〃\t不著撰人",
             "医学讀書記\t二巻附清香楼医案一巻\t二〃\t清尤怡撰",
-            "医学補天石三種合刻\t七巻\t六〃\t清尤怡〃才維城〃",
+            "医学補天石三種合刻\t七巻\t六〃\t清尤怡才維城〃",
             "証治鍼経\t四〃\t四〃\t清郭誠勲〃",
             "陳脩園四種\t十四巻\t十二〃\t清陳念祖〃"
           ]
@@ -9541,10 +9421,10 @@
           ],
           "rows": [
             [
-              "萬密斎全書",
+              "萬蜜斎全書",
               "百八巻",
               "十六冊",
-              "明萬全撰"
+              "明万全撰"
             ],
             [
               "又",
@@ -9670,7 +9550,7 @@
               "医学補天石三種合刻",
               "七巻",
               "六〃",
-              "清尤怡〃才維城〃"
+              "清尤怡才維城〃"
             ],
             [
               "証治鍼経",
@@ -9977,7 +9857,7 @@
                 "title": "外台秘要方",
                 "volumes": "四十巻有闕宋板金沢文庫本",
                 "fascicles": "十一〃",
-                "responsibility": "唐王燾〃"
+                "responsibility": "唐王壽〃"
               },
               "cell_fragments": {
                 "title": [
@@ -9991,10 +9871,10 @@
                   "十一〃"
                 ],
                 "responsibility": [
-                  "唐王燾〃"
+                  "唐王壽〃"
                 ]
               },
-              "text": "外台秘要方\t四十巻有闕宋板金沢文庫本\t十一〃\t唐王燾〃"
+              "text": "外台秘要方\t四十巻有闕宋板金沢文庫本\t十一〃\t唐王壽〃"
             },
             {
               "index": 9,
@@ -10053,14 +9933,14 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 4,
-              "field": "volumes",
-              "excerpt": "嘉永",
-              "candidate": "嘉永／嘉永以外の年号",
-              "reason": "写刻註の形を覆核",
+              "column_index": 2,
+              "field": "responsibility",
+              "excerpt": "宜",
+              "candidate": "宜／宣",
+              "reason": "末字下框內橫筆略帶斜勢，礙於上蓋交筆",
               "offset": 3,
-              "count": 2,
-              "state": "unresolved-first-reading"
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -10072,7 +9952,7 @@
             "千金翼方\t三十巻\t二十四〃\t同",
             "千金宝要補\t三巻附三巻\t二〃\t宋郭思撰明張学懋補",
             "千金簡易方\t十巻\t四〃\t明程軌撰",
-            "外台秘要方\t四十巻有闕宋板金沢文庫本\t十一〃\t唐王燾〃",
+            "外台秘要方\t四十巻有闕宋板金沢文庫本\t十一〃\t唐王壽〃",
             "又\t四十巻\t二十〃\t同",
             "又\t四十巻延享板\t二十四〃\t同"
           ]
@@ -10219,7 +10099,7 @@
               "外台秘要方",
               "四十巻有闕宋板金沢文庫本",
               "十一〃",
-              "唐王燾〃"
+              "唐王壽〃"
             ],
             [
               "又",
@@ -10531,18 +10411,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 3,
-              "field": "volumes",
-              "excerpt": "指総論",
-              "candidate": "指総論／指南総論省筆",
-              "reason": "原鈔小欄釋文待核",
-              "offset": 8,
-              "count": 3,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "又\t四十巻写本\t四十二冊\t同",
@@ -10848,10 +10717,10 @@
               "field": "responsibility",
               "excerpt": "廉",
               "candidate": "廉／㢘",
-              "reason": "右側簡筆",
+              "reason": "广下中央一縱筆與挾筆相連，尚難定古今體。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -11338,10 +11207,10 @@
               "field": "responsibility",
               "excerpt": "穆蘇",
               "candidate": "穆蘇／穆蘓",
-              "reason": "第二字上部略寫",
+              "reason": "末字上件省筆，兩半相連，保留原讀。",
               "offset": 3,
               "count": 2,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -11582,14 +11451,14 @@
               "kind": "entry",
               "id": "f020-L-c09",
               "cells": {
-                "title": "救急療飢易簡部方",
+                "title": "救急療食易簡部方",
                 "volumes": "一〃",
                 "fascicles": "一〃",
                 "responsibility": "明歐陽植〃"
               },
               "cell_fragments": {
                 "title": [
-                  "救急療飢易簡部方"
+                  "救急療食易簡部方"
                 ],
                 "volumes": [
                   "一〃"
@@ -11601,7 +11470,7 @@
                   "明歐陽植〃"
                 ]
               },
-              "text": "救急療飢易簡部方\t一〃\t一〃\t明歐陽植〃"
+              "text": "救急療食易簡部方\t一〃\t一〃\t明歐陽植〃"
             },
             {
               "index": 10,
@@ -11631,18 +11500,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 9,
-              "field": "title",
-              "excerpt": "飢易",
-              "candidate": "飢易／食易",
-              "reason": "食旁與雙形相接",
-              "offset": 3,
-              "count": 2,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "又\t二十二巻明洪熙板\t二十二冊\t同",
@@ -11653,7 +11511,7 @@
             "萬氏家鈔濟世良方\t七巻\t七〃\t明萬表撰萬邦孚増",
             "経験濟世良方\t十一巻\t四〃\t明陳仁賢撰",
             "仁文書院集験方\t七巻\t七〃\t明鄒元標〃",
-            "救急療飢易簡部方\t一〃\t一〃\t明歐陽植〃",
+            "救急療食易簡部方\t一〃\t一〃\t明歐陽植〃",
             "備急良方\t一〃\t一〃\t明錢国賓〃"
           ]
         }
@@ -11802,7 +11660,7 @@
               "明鄒元標〃"
             ],
             [
-              "救急療飢易簡部方",
+              "救急療食易簡部方",
               "一〃",
               "一〃",
               "明歐陽植〃"
@@ -11855,7 +11713,7 @@
                 "title": "回生明論医方",
                 "volumes": "八巻",
                 "fascicles": "八冊",
-                "responsibility": "明謝鯤秀撰"
+                "responsibility": "明謝毓秀撰"
               },
               "cell_fragments": {
                 "title": [
@@ -11868,10 +11726,10 @@
                   "八冊"
                 ],
                 "responsibility": [
-                  "明謝鯤秀撰"
+                  "明謝毓秀撰"
                 ]
               },
-              "text": "回生明論医方\t八巻\t八冊\t明謝鯤秀撰"
+              "text": "回生明論医方\t八巻\t八冊\t明謝毓秀撰"
             },
             {
               "index": 2,
@@ -11987,7 +11845,7 @@
                 "title": "延壽神方",
                 "volumes": "四〃",
                 "fascicles": "二〃",
-                "responsibility": "明呉昊編王秉賢續"
+                "responsibility": "明呉昊編王来賢續"
               },
               "cell_fragments": {
                 "title": [
@@ -12002,10 +11860,10 @@
                 "responsibility": [
                   "明",
                   "呉昊編",
-                  "王秉賢續"
+                  "王来賢續"
                 ]
               },
-              "text": "延壽神方\t四〃\t二〃\t明呉昊編王秉賢續"
+              "text": "延壽神方\t四〃\t二〃\t明呉昊編王来賢續"
             },
             {
               "index": 7,
@@ -12067,7 +11925,7 @@
                 "title": "應後方",
                 "volumes": "一巻",
                 "fascicles": "一〃",
-                "responsibility": "明軟量隆〃"
+                "responsibility": "明秋量隆〃"
               },
               "cell_fragments": {
                 "title": [
@@ -12080,10 +11938,10 @@
                   "一〃"
                 ],
                 "responsibility": [
-                  "明軟量隆〃"
+                  "明秋量隆〃"
                 ]
               },
-              "text": "應後方\t一巻\t一〃\t明軟量隆〃"
+              "text": "應後方\t一巻\t一〃\t明秋量隆〃"
             },
             {
               "index": 10,
@@ -12115,47 +11973,27 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 1,
+              "column_index": 6,
               "field": "responsibility",
-              "excerpt": "鯤",
-              "candidate": "鯤／鯨",
-              "reason": "魚旁右部待核",
+              "excerpt": "昊",
+              "candidate": "昊／昃",
+              "reason": "右支呉下面一字日部末筆與下一橫相接。",
               "offset": 2,
               "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 9,
-              "field": "title",
-              "excerpt": "應",
-              "candidate": "應／肘",
-              "reason": "首字寫法不明",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 9,
-              "field": "responsibility",
-              "excerpt": "軟",
-              "candidate": "軟／袁／阮",
-              "reason": "首字輪廓待原圖",
-              "offset": 1,
-              "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
           "text": [
-            "回生明論医方\t八巻\t八冊\t明謝鯤秀撰",
+            "回生明論医方\t八巻\t八冊\t明謝毓秀撰",
             "碎金方\t四〃\t四〃\t明王文謨〃",
             "袖珍方\t四〃古写本\t八〃\t不著撰人",
             "神聖保命方\t十巻写本\t十〃\t明董宿撰",
             "経験全方\t六巻\t五〃\t明劉倫〃",
-            "延壽神方\t四〃\t二〃\t明呉昊編王秉賢續",
+            "延壽神方\t四〃\t二〃\t明呉昊編王来賢續",
             "續補扶壽精方\t三〃\t三〃\t明張時微撰",
             "攝生衆妙方\t十一巻\t四〃\t明喩政〃",
-            "應後方\t一巻\t一〃\t明軟量隆〃",
+            "應後方\t一巻\t一〃\t明秋量隆〃",
             "慈惠方\t一〃\t一〃\t明郭隆〃"
           ]
         },
@@ -12436,21 +12274,21 @@
               "column_index": 4,
               "field": "responsibility",
               "excerpt": "杰",
-              "candidate": "杰／木",
-              "reason": "下方透背混寫",
+              "candidate": "杰／求／來",
+              "reason": "雲下面一字中筆豎鉤、末部右斜點和透背相疊，保留並列候選。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             },
             {
               "column_index": 6,
               "field": "responsibility",
               "excerpt": "賢葉候",
-              "candidate": "賢葉候／賢葉侯",
-              "reason": "欄內見右件豎及短撇",
+              "candidate": "賢葉候／賢業候／賢葉侯",
+              "reason": "第二字下段有木形，最後人旁中筆是否有獨立短豎仍待核。",
               "offset": 1,
               "count": 3,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -12483,7 +12321,7 @@
               "回生明論医方",
               "八巻",
               "八冊",
-              "明謝鯤秀撰"
+              "明謝毓秀撰"
             ],
             [
               "碎金方",
@@ -12513,7 +12351,7 @@
               "延壽神方",
               "四〃",
               "二〃",
-              "明呉昊編王秉賢續"
+              "明呉昊編王来賢續"
             ],
             [
               "續補扶壽精方",
@@ -12531,7 +12369,7 @@
               "應後方",
               "一巻",
               "一〃",
-              "明軟量隆〃"
+              "明秋量隆〃"
             ],
             [
               "慈惠方",
@@ -12717,7 +12555,7 @@
                 "title": "医便",
                 "volumes": "二巻附一巻",
                 "fascicles": "二〃",
-                "responsibility": "明王君賞撰"
+                "responsibility": "明王君賓撰"
               },
               "cell_fragments": {
                 "title": [
@@ -12731,10 +12569,10 @@
                   "二〃"
                 ],
                 "responsibility": [
-                  "明王君賞撰"
+                  "明王君賓撰"
                 ]
               },
-              "text": "医便\t二巻附一巻\t二〃\t明王君賞撰"
+              "text": "医便\t二巻附一巻\t二〃\t明王君賓撰"
             },
             {
               "index": 4,
@@ -12767,14 +12605,14 @@
               "kind": "entry",
               "id": "f022-R-c05",
               "cells": {
-                "title": "重証本草單方",
+                "title": "重記本草單方",
                 "volumes": "五巻",
                 "fascicles": "五〃",
                 "responsibility": "明鄭道昭〃"
               },
               "cell_fragments": {
                 "title": [
-                  "重証本草單方"
+                  "重記本草單方"
                 ],
                 "volumes": [
                   "五巻"
@@ -12786,7 +12624,7 @@
                   "明鄭道昭〃"
                 ]
               },
-              "text": "重証本草單方\t五巻\t五〃\t明鄭道昭〃"
+              "text": "重記本草單方\t五巻\t五〃\t明鄭道昭〃"
             },
             {
               "index": 6,
@@ -12900,7 +12738,7 @@
                 "title": "医品補遺",
                 "volumes": "四〃写本",
                 "fascicles": "一〃",
-                "responsibility": "清浦士貞〃"
+                "responsibility": "清郎延模〃"
               },
               "cell_fragments": {
                 "title": [
@@ -12914,37 +12752,26 @@
                   "一〃"
                 ],
                 "responsibility": [
-                  "清浦士貞〃"
+                  "清郎延模〃"
                 ]
               },
-              "text": "医品補遺\t四〃写本\t一〃\t清浦士貞〃"
+              "text": "医品補遺\t四〃写本\t一〃\t清郎延模〃"
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 5,
-              "field": "title",
-              "excerpt": "証",
-              "candidate": "証／訂",
-              "reason": "言旁下隸筆待核",
-              "offset": 1,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "傳信尤易方\t八巻\t八冊\t明曹金編",
             "彙聚單方\t七巻\t六〃\t明呉勉学〃",
-            "医便\t二巻附一巻\t二〃\t明王君賞撰",
+            "医便\t二巻附一巻\t二〃\t明王君賓撰",
             "本草單方\t十九巻\t六〃\t明繆希雍〃",
-            "重証本草單方\t五巻\t五〃\t明鄭道昭〃",
+            "重記本草單方\t五巻\t五〃\t明鄭道昭〃",
             "本草類方\t十〃\t十〃\t清年希堯〃",
             "本草萬法鍼線\t八〃\t四〃\t清蔡烈先編",
             "李氏家藏竒験秘法\t無巻数\t五〃\t清李失名〃",
             "秘方集験\t二巻\t二〃\t清王夢蘭撰",
-            "医品補遺\t四〃写本\t一〃\t清浦士貞〃"
+            "医品補遺\t四〃写本\t一〃\t清郎延模〃"
           ]
         },
         {
@@ -13114,7 +12941,7 @@
                 "title": "臨証経験方",
                 "volumes": "無巻数",
                 "fascicles": "一〃",
-                "responsibility": "清張中孚〃"
+                "responsibility": "清張中華〃"
               },
               "cell_fragments": {
                 "title": [
@@ -13127,10 +12954,10 @@
                   "一〃"
                 ],
                 "responsibility": [
-                  "清張中孚〃"
+                  "清張中華〃"
                 ]
               },
-              "text": "臨証経験方\t無巻数\t一〃\t清張中孚〃"
+              "text": "臨証経験方\t無巻数\t一〃\t清張中華〃"
             },
             {
               "index": 8,
@@ -13161,21 +12988,11 @@
               "column_index": 2,
               "field": "responsibility",
               "excerpt": "翊",
-              "candidate": "翊／栩",
-              "reason": "左件窄筆右段羽待核",
+              "candidate": "翊／栩／翔",
+              "reason": "末字右重羽較清楚，左件擠在欄緣。",
               "offset": 2,
               "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 7,
-              "field": "responsibility",
-              "excerpt": "孚",
-              "candidate": "孚／華",
-              "reason": "末字下筆略",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [
@@ -13189,7 +13006,7 @@
             "\t写本\t\t",
             "平易方\t四巻\t四冊\t清葉香侣撰",
             "成方功用\t十二巻\t八〃\t清呉儀洛編",
-            "臨証経験方\t無巻数\t一〃\t清張中孚〃",
+            "臨証経験方\t無巻数\t一〃\t清張中華〃",
             "右医家類方書之屬八十五部千百八十二巻内二部無巻数"
           ]
         }
@@ -13221,7 +13038,7 @@
               "医便",
               "二巻附一巻",
               "二〃",
-              "明王君賞撰"
+              "明王君賓撰"
             ],
             [
               "本草單方",
@@ -13230,7 +13047,7 @@
               "明繆希雍〃"
             ],
             [
-              "重証本草單方",
+              "重記本草單方",
               "五巻",
               "五〃",
               "明鄭道昭〃"
@@ -13263,7 +13080,7 @@
               "医品補遺",
               "四〃写本",
               "一〃",
-              "清浦士貞〃"
+              "清郎延模〃"
             ]
           ],
           "row_kinds": [
@@ -13329,7 +13146,7 @@
               "臨証経験方",
               "無巻数",
               "一〃",
-              "清張中孚〃"
+              "清張中華〃"
             ],
             [
               "右医家類方書之屬八十五部千百八十二巻内二部無巻数",
@@ -13660,28 +13477,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 3,
-              "field": "title",
-              "excerpt": "類要",
-              "candidate": "類要／類聚",
-              "reason": "第二字書勢略",
-              "offset": 0,
-              "count": 2,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 6,
-              "field": "title",
-              "excerpt": "及讀",
-              "candidate": "及讀／必讀",
-              "reason": "倒鉤筆和續部待核",
-              "offset": 6,
-              "count": 2,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "神農本草経疏\t三十巻\t十六冊\t明繆希雍撰",
@@ -14154,11 +13950,11 @@
               "column_index": 2,
               "field": "responsibility",
               "excerpt": "託",
-              "candidate": "託／鐸",
-              "reason": "右件疑異書字",
+              "candidate": "託／訣／誤／鐸",
+              "reason": "末字左言分明，右細筆向下兩分，右件讀法仍未確定。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -14714,7 +14510,7 @@
                 "title": "食鑑本草",
                 "volumes": "二〃",
                 "fascicles": "一〃",
-                "responsibility": "明寧源〃"
+                "responsibility": "明寗源〃"
               },
               "cell_fragments": {
                 "title": [
@@ -14727,10 +14523,10 @@
                   "一〃"
                 ],
                 "responsibility": [
-                  "明寧源〃"
+                  "明寗源〃"
                 ]
               },
-              "text": "食鑑本草\t二〃\t一〃\t明寧源〃"
+              "text": "食鑑本草\t二〃\t一〃\t明寗源〃"
             },
             {
               "index": 4,
@@ -14836,7 +14632,7 @@
           "text": [
             "飲膳正要\t三巻写本\t三冊\t元忽思慧撰",
             "飲食書\t六巻\t二〃\t明宗公玉〃",
-            "食鑑本草\t二〃\t一〃\t明寧源〃",
+            "食鑑本草\t二〃\t一〃\t明寗源〃",
             "本草山公医旨食物類\t五〃首一巻\t四〃\t明施永圖〃",
             "食物本草会纂\t十二〃\t八〃\t明沈李龍〃",
             "右医家類本草之屬三十一部四百二十一巻",
@@ -15117,20 +14913,20 @@
           "observed_paratext": [
             {
               "layer": "marginal-addition",
-              "text": "。二十二巻",
-              "state": "first-reading"
+              "text": "。　七",
+              "state": "image-observed"
             }
           ],
           "issues": [
             {
-              "column_index": 4,
-              "field": "fascicles",
-              "excerpt": "七",
-              "candidate": "七／五",
-              "reason": "統計數下有覆改，右另小筆似七",
-              "offset": 0,
+              "column_index": 8,
+              "field": "volumes",
+              "excerpt": "聞",
+              "candidate": "聞／闡",
+              "reason": "附下面小字門內細筆連疊，暫保留見讀並列對讀候選。",
+              "offset": 4,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -15175,7 +14971,7 @@
               "食鑑本草",
               "二〃",
               "一〃",
-              "明寧源〃"
+              "明寗源〃"
             ],
             [
               "本草山公医旨食物類",
@@ -15476,7 +15272,7 @@
                 "title": "傷寒後條弁",
                 "volumes": "十五巻首一巻附一巻",
                 "fascicles": "八〃",
-                "responsibility": "清程應旄撰"
+                "responsibility": "清程應施撰"
               },
               "cell_fragments": {
                 "title": [
@@ -15490,10 +15286,10 @@
                   "八〃"
                 ],
                 "responsibility": [
-                  "清程應旄撰"
+                  "清程應施撰"
                 ]
               },
-              "text": "傷寒後條弁\t十五巻首一巻附一巻\t八〃\t清程應旄撰"
+              "text": "傷寒後條弁\t十五巻首一巻附一巻\t八〃\t清程應施撰"
             },
             {
               "index": 7,
@@ -15593,24 +15389,14 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 6,
-              "field": "responsibility",
-              "excerpt": "旄",
-              "candidate": "旄／施",
-              "reason": "右部四筆",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
               "column_index": 8,
               "field": "volumes",
               "excerpt": "痙",
               "candidate": "痙／痓",
-              "reason": "巠形列內省筆",
+              "reason": "書上疾旁內件淡，右下走勢不清，餘淡痕視作透背。",
               "offset": 0,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -15620,7 +15406,7 @@
             "傷寒六書\t七巻\t四〃\t明陶華撰",
             "別本傷寒六書\t七〃\t六〃\t同",
             "傷寒全生集\t四〃\t四〃\t同",
-            "傷寒後條弁\t十五巻首一巻附一巻\t八〃\t清程應旄撰",
+            "傷寒後條弁\t十五巻首一巻附一巻\t八〃\t清程應施撰",
             "傷寒論條弁\t八巻附本草鈔一巻\t二〃\t明方有執〃",
             "\t痙書一巻或問一巻\t\t",
             "傷寒治例\t一巻写本\t二冊\t明劉純撰",
@@ -15665,14 +15451,14 @@
               "kind": "entry",
               "id": "f026-L-c02",
               "cells": {
-                "title": "傷寒已脉",
+                "title": "傷寒己脉",
                 "volumes": "十二巻内二巻闕",
                 "fascicles": "十〃",
                 "responsibility": "明王執中〃"
               },
               "cell_fragments": {
                 "title": [
-                  "傷寒已脉"
+                  "傷寒己脉"
                 ],
                 "volumes": [
                   "十二巻",
@@ -15685,7 +15471,7 @@
                   "明王執中〃"
                 ]
               },
-              "text": "傷寒已脉\t十二巻内二巻闕\t十〃\t明王執中〃"
+              "text": "傷寒己脉\t十二巻内二巻闕\t十〃\t明王執中〃"
             },
             {
               "index": 3,
@@ -15902,22 +15688,11 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 2,
-              "field": "title",
-              "excerpt": "已",
-              "candidate": "已／己",
-              "reason": "折筆上下關係待核",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "傷寒發微論\t四巻\t二冊\t明許叔微撰",
-            "傷寒已脉\t十二巻内二巻闕\t十〃\t明王執中〃",
+            "傷寒己脉\t十二巻内二巻闕\t十〃\t明王執中〃",
             "内台方議\t十二〃附一〃\t二〃\t明許弘〃",
             "傷寒蘊要全書\t四巻写本\t四〃\t明呉綬〃",
             "傷寒活人指掌\t十巻\t二〃\t明李知先〃",
@@ -15974,7 +15749,7 @@
               "傷寒後條弁",
               "十五巻首一巻附一巻",
               "八〃",
-              "清程應旄撰"
+              "清程應施撰"
             ],
             [
               "傷寒論條弁",
@@ -16031,7 +15806,7 @@
               "明許叔微撰"
             ],
             [
-              "傷寒已脉",
+              "傷寒己脉",
               "十二巻内二巻闕",
               "十〃",
               "明王執中〃"
@@ -16381,8 +16156,8 @@
           "observed_paratext": [
             {
               "layer": "marginal-addition",
-              "text": "。錦",
-              "state": "first-reading"
+              "text": "。",
+              "state": "image-observed"
             }
           ],
           "issues": [
@@ -16390,31 +16165,31 @@
               "column_index": 4,
               "field": "responsibility",
               "excerpt": "柎",
-              "candidate": "柎／杲",
-              "reason": "木旁與右側待核",
+              "candidate": "柎／杕／杖",
+              "reason": "李下面木旁右件斜筆互交，末筆不清。",
               "offset": 2,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             },
             {
               "column_index": 6,
               "field": "responsibility",
               "excerpt": "藉琓",
-              "candidate": "藉琓／祗和",
-              "reason": "兩字小筆",
+              "candidate": "藉琓／藉琬／祗和",
+              "reason": "最後玉旁內件細，寶蓋下的夗／元難分。",
               "offset": 2,
               "count": 2,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             },
             {
               "column_index": 7,
               "field": "volumes",
               "excerpt": "設疫六",
               "candidate": "設疫六／設疫云",
-              "reason": "細字留待覆核",
+              "reason": "末字近亠下兩點，前言旁和細筆仍留原讀待核。",
               "offset": 3,
               "count": 3,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -16632,7 +16407,7 @@
                 "title": "廣嗣五種備用",
                 "volumes": "無巻数",
                 "fascicles": "二〃",
-                "responsibility": "清王寒顏〃"
+                "responsibility": "清王寒穎〃"
               },
               "cell_fragments": {
                 "title": [
@@ -16645,10 +16420,10 @@
                   "二〃"
                 ],
                 "responsibility": [
-                  "清王寒顏〃"
+                  "清王寒穎〃"
                 ]
               },
-              "text": "廣嗣五種備用\t無巻数\t二〃\t清王寒顏〃"
+              "text": "廣嗣五種備用\t無巻数\t二〃\t清王寒穎〃"
             },
             {
               "index": 9,
@@ -16658,7 +16433,7 @@
                 "title": "女病百病問答",
                 "volumes": "四巻補遺一巻",
                 "fascicles": "四〃",
-                "responsibility": "明錢国賓撰"
+                "responsibility": "明錢国賓〃"
               },
               "cell_fragments": {
                 "title": [
@@ -16672,10 +16447,10 @@
                   "四〃"
                 ],
                 "responsibility": [
-                  "明錢国賓撰"
+                  "明錢国賓〃"
                 ]
               },
-              "text": "女病百病問答\t四巻補遺一巻\t四〃\t明錢国賓撰"
+              "text": "女病百病問答\t四巻補遺一巻\t四〃\t明錢国賓〃"
             },
             {
               "index": 10,
@@ -16711,20 +16486,20 @@
               "field": "title",
               "excerpt": "胎",
               "candidate": "胎／厄",
-              "reason": "月旁內寫法",
+              "reason": "題首左偏旁窄且突伸，右件末端呈轉鉤，保留原讀待核。",
               "offset": 0,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             },
             {
               "column_index": 5,
               "field": "responsibility",
               "excerpt": "霄",
               "candidate": "霄／雱",
-              "reason": "雨头下部略寫",
+              "reason": "雨頭同讀，雨下短深墨疊寫，不能分肖或方。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -16736,8 +16511,8 @@
             "便産須知\t二〃写本\t二〃\t明羅青霄〃",
             "廣嗣全書\t無巻数\t一〃\t不著撰人",
             "廣嗣紀要\t五巻\t二〃\t明萬全撰",
-            "廣嗣五種備用\t無巻数\t二〃\t清王寒顏〃",
-            "女病百病問答\t四巻補遺一巻\t四〃\t明錢国賓撰",
+            "廣嗣五種備用\t無巻数\t二〃\t清王寒穎〃",
+            "女病百病問答\t四巻補遺一巻\t四〃\t明錢国賓〃",
             "女科大生要旨\t五巻\t二〃\t清唐千頃〃"
           ]
         }
@@ -16883,13 +16658,13 @@
               "廣嗣五種備用",
               "無巻数",
               "二〃",
-              "清王寒顏〃"
+              "清王寒穎〃"
             ],
             [
               "女病百病問答",
               "四巻補遺一巻",
               "四〃",
-              "明錢国賓撰"
+              "明錢国賓〃"
             ],
             [
               "女科大生要旨",
@@ -16939,7 +16714,7 @@
                 "title": "女科経綸",
                 "volumes": "八巻",
                 "fascicles": "四冊",
-                "responsibility": "清蕭埈編"
+                "responsibility": "清蕭塤編"
               },
               "cell_fragments": {
                 "title": [
@@ -16952,10 +16727,10 @@
                   "四冊"
                 ],
                 "responsibility": [
-                  "清蕭埈編"
+                  "清蕭塤編"
                 ]
               },
-              "text": "女科経綸\t八巻\t四冊\t清蕭埈編"
+              "text": "女科経綸\t八巻\t四冊\t清蕭塤編"
             },
             {
               "index": 2,
@@ -17055,14 +16830,14 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 1,
-              "field": "responsibility",
-              "excerpt": "埈",
-              "candidate": "埈／塤",
-              "reason": "左件及右側小筆",
-              "offset": 2,
+              "column_index": 3,
+              "field": "title",
+              "excerpt": "濟",
+              "candidate": "濟／産／斎",
+              "reason": "陰上字下部省成斜筆與兩豎，左側未能確定獨立水點，保留原讀。",
+              "offset": 0,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [
@@ -17073,7 +16848,7 @@
             10
           ],
           "text": [
-            "女科経綸\t八巻\t四冊\t清蕭埈編",
+            "女科経綸\t八巻\t四冊\t清蕭塤編",
             "女科切要\t八〃\t二〃\t清呉道源撰",
             "濟陰綱目\t十四巻\t十〃\t清武之望〃",
             "右医家類婦人科之屬十三部七十九巻内二部無巻数",
@@ -17355,10 +17130,20 @@
               "field": "title",
               "excerpt": "合刻",
               "candidate": "跨第九至第十格間書寫",
-              "reason": "物理布局須在附註標跨欄",
+              "reason": "「合刻」題記在L09・L10欄界上，冊數二〃及責任同由兩格共用。",
               "offset": 0,
               "count": 2,
-              "state": "unresolved-first-reading"
+              "state": "layout-observed"
+            },
+            {
+              "column_index": 5,
+              "field": "title",
+              "excerpt": "拿",
+              "candidate": "拿／拏",
+              "reason": "字下部手可辨，上部偏窄，合形或奴的短筆待辨。",
+              "offset": 3,
+              "count": 1,
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -17391,7 +17176,7 @@
               "女科経綸",
               "八巻",
               "四冊",
-              "清蕭埈編"
+              "清蕭塤編"
             ],
             [
               "女科切要",
@@ -17732,7 +17517,7 @@
                 "title": "児科方要",
                 "volumes": "一巻",
                 "fascicles": "一〃",
-                "responsibility": "明呉志申撰"
+                "responsibility": "明呉志中撰"
               },
               "cell_fragments": {
                 "title": [
@@ -17745,10 +17530,10 @@
                   "一〃"
                 ],
                 "responsibility": [
-                  "明呉志申撰"
+                  "明呉志中撰"
                 ]
               },
-              "text": "児科方要\t一巻\t一〃\t明呉志申撰"
+              "text": "児科方要\t一巻\t一〃\t明呉志中撰"
             },
             {
               "index": 8,
@@ -17808,14 +17593,14 @@
               "kind": "entry",
               "id": "f029-R-c10",
               "cells": {
-                "title": "枚偏瑣言",
+                "title": "救偏瑣言",
                 "volumes": "十巻附一巻",
                 "fascicles": "四〃",
                 "responsibility": "清費啓泰〃"
               },
               "cell_fragments": {
                 "title": [
-                  "枚偏瑣言"
+                  "救偏瑣言"
                 ],
                 "volumes": [
                   "十巻",
@@ -17828,22 +17613,11 @@
                   "清費啓泰〃"
                 ]
               },
-              "text": "枚偏瑣言\t十巻附一巻\t四〃\t清費啓泰〃"
+              "text": "救偏瑣言\t十巻附一巻\t四〃\t清費啓泰〃"
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 10,
-              "field": "title",
-              "excerpt": "枚偏",
-              "candidate": "枚偏／救偏",
-              "reason": "第一字左旁近木",
-              "offset": 0,
-              "count": 2,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "活幼便覽\t二巻\t二冊\t明劉錫撰",
@@ -17852,10 +17626,10 @@
             "嬰童百問\t十巻\t五〃\t明許讃〃",
             "活嬰全書\t三〃\t一〃\t明龔雲林〃",
             "保嬰全書\t二十巻\t二十〃\t明薛鎧薛己編",
-            "児科方要\t一巻\t一〃\t明呉志申撰",
+            "児科方要\t一巻\t一〃\t明呉志中撰",
             "幼々集成\t六巻\t十二〃\t清陳復正〃",
             "幼科誠書\t十六巻附痘疹大全三巻\t十二〃\t清談金章〃",
-            "枚偏瑣言\t十巻附一巻\t四〃\t清費啓泰〃"
+            "救偏瑣言\t十巻附一巻\t四〃\t清費啓泰〃"
           ]
         },
         {
@@ -18133,14 +17907,14 @@
           "observed_paratext": [],
           "issues": [
             {
-              "column_index": 7,
-              "field": "volumes",
-              "excerpt": "體",
-              "candidate": "體／髓",
-              "reason": "骨旁末位略寫",
-              "offset": 7,
+              "column_index": 4,
+              "field": "responsibility",
+              "excerpt": "顥",
+              "candidate": "顥／顯",
+              "reason": "雙人名於同欄分片。前人名末字右頁可辨，左件小筆連寫，顥與顯仍待區別。",
+              "offset": 2,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -18209,7 +17983,7 @@
               "児科方要",
               "一巻",
               "一〃",
-              "明呉志申撰"
+              "明呉志中撰"
             ],
             [
               "幼々集成",
@@ -18224,7 +17998,7 @@
               "清談金章〃"
             ],
             [
-              "枚偏瑣言",
+              "救偏瑣言",
               "十巻附一巻",
               "四〃",
               "清費啓泰〃"
@@ -18614,30 +18388,20 @@
           "observed_paratext": [
             {
               "layer": "marginal-addition",
-              "text": "。宝",
-              "state": "first-reading"
+              "text": "。宝　。",
+              "state": "image-observed"
             }
           ],
           "issues": [
-            {
-              "column_index": 8,
-              "field": "responsibility",
-              "excerpt": "廉",
-              "candidate": "廉／康",
-              "reason": "广部內畫待核",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
             {
               "column_index": 10,
               "field": "responsibility",
               "excerpt": "巽",
               "candidate": "巽／異",
-              "reason": "字上半細",
+              "reason": "上端小方形筆畫局部連墨，保留底本的巽候選。",
               "offset": 2,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -18924,10 +18688,10 @@
               "field": "responsibility",
               "excerpt": "溟",
               "candidate": "溟／漢",
-              "reason": "水旁右部少畫",
+              "reason": "水旁右件呈冖與扁方框但細部斷續，暫讀溟。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -19401,30 +19165,20 @@
               "field": "responsibility",
               "excerpt": "騏",
               "candidate": "騏／駿",
-              "reason": "馬旁右部小字",
+              "reason": "末字馬旁清楚，右側豎與下末的出勢仍難定，維持現候選。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 5,
-              "field": "title",
-              "excerpt": "痧",
-              "candidate": "痧／麻",
-              "reason": "疒下筆形",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             },
             {
               "column_index": 7,
               "field": "responsibility",
               "excerpt": "旬",
               "candidate": "旬／句",
-              "reason": "右末折筆",
+              "reason": "勹內極細橫與折角不易分，保留旬與句。",
               "offset": 3,
               "count": 1,
-              "state": "unresolved-first-reading"
+              "state": "unresolved-after-image-review"
             }
           ],
           "blank_columns": [],
@@ -19968,41 +19722,10 @@
             {
               "layer": "marginal-addition",
               "text": "。澄",
-              "state": "first-reading"
+              "state": "image-observed"
             }
           ],
-          "issues": [
-            {
-              "column_index": 4,
-              "field": "responsibility",
-              "excerpt": "張",
-              "candidate": "張／澄",
-              "reason": "欄上另見澄，正文先保留實見",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 5,
-              "field": "responsibility",
-              "excerpt": "清",
-              "candidate": "清／宋",
-              "reason": "抄本正文可見清，時代不以外本校改",
-              "offset": 0,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            },
-            {
-              "column_index": 9,
-              "field": "responsibility",
-              "excerpt": "偏",
-              "candidate": "偏／儒",
-              "reason": "二字偏旁末筆待核",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "瘡瘍経験全書\t十三巻\t六冊\t宋竇漢卿撰",
@@ -20472,18 +20195,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 8,
-              "field": "responsibility",
-              "excerpt": "從",
-              "candidate": "從／徳",
-              "reason": "雙人旁右部待核",
-              "offset": 3,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [],
           "text": [
             "外科啓玄\t十二巻\t六冊\t明申拱宸撰",
@@ -20574,18 +20286,7 @@
             }
           ],
           "observed_paratext": [],
-          "issues": [
-            {
-              "column_index": 1,
-              "field": "title",
-              "excerpt": "釈",
-              "candidate": "釈／釋",
-              "reason": "稿字右件捺筆",
-              "offset": 2,
-              "count": 1,
-              "state": "unresolved-first-reading"
-            }
-          ],
+          "issues": [],
           "blank_columns": [
             4,
             5,
@@ -21652,7 +21353,9 @@
               "cell_fragments": {
                 "title": [
                   "元治",
-                  "増補御書籍目録医籍部終"
+                  "増補",
+                  "御書籍目録医籍部",
+                  "終"
                 ],
                 "volumes": [],
                 "fascicles": [],
@@ -21803,6 +21506,457 @@
         }
       ],
       "tables": []
+    }
+  ],
+  "previous_version": "0.1.0",
+  "changes": [
+    {
+      "frame": 2,
+      "part": "f002-S",
+      "column": null,
+      "field": "collection-seal",
+      "before": "",
+      "after": "東研",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/1",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00001.tif/full/3600,/0/default.jpg",
+      "reason": "59521 的原貼紙下方小框墨印可見東研"
+    },
+    {
+      "frame": 3,
+      "part": "f003-L",
+      "column": 4,
+      "field": "title",
+      "before": "元治増補御書籍目録",
+      "after": "",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/2",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00002.tif/full/3600,/0/default.jpg"
+    },
+    {
+      "frame": 3,
+      "part": "f003-L",
+      "column": 5,
+      "field": "title",
+      "before": "",
+      "after": "元治",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/2",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00002.tif/full/3600,/0/default.jpg"
+    },
+    {
+      "frame": 3,
+      "part": "f003-L",
+      "column": 6,
+      "field": "title",
+      "before": "",
+      "after": "増補御書籍目録",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/2",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00002.tif/full/3600,/0/default.jpg"
+    },
+    {
+      "frame": 4,
+      "part": "f004-L",
+      "column": 6,
+      "field": "title",
+      "before": "素問靈枢缺文",
+      "after": "素問靈枢釈文",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/3",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00003.tif/full/3600,/0/default.jpg",
+      "reason": "左件為釆而右件為尺，並無缶形"
+    },
+    {
+      "frame": 4,
+      "part": "f004-L",
+      "column": null,
+      "field": "marginal-addition",
+      "before": "",
+      "after": "。",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/3",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00003.tif/full/3600,/0/default.jpg",
+      "reason": "子部左下方可見孤立深墨點，獨立記為旁點"
+    },
+    {
+      "frame": 5,
+      "part": "f005-L",
+      "column": 6,
+      "field": "responsibility",
+      "before": "明虞搏〃",
+      "after": "明虞博〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/4",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00004.tif/full/3600,/0/default.jpg",
+      "reason": "虞下字左十，無手旁撇挑，右尃清楚"
+    },
+    {
+      "frame": 6,
+      "part": "f006-R",
+      "column": 10,
+      "field": "responsibility",
+      "before": "清沈棣懷〃",
+      "after": "清沈棟懷〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/5",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00005.tif/full/3600,/0/default.jpg",
+      "reason": "沈下木旁右件縱畫經內框，下方斜向兩分，較近東件"
+    },
+    {
+      "frame": 8,
+      "part": "f008-L",
+      "column": 8,
+      "field": "responsibility",
+      "before": "宋張杲撰",
+      "after": "宋張景撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/7",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00007.tif/full/3600,/0/default.jpg",
+      "reason": "日下筆呈小的中豎鉤與兩點，非木下足"
+    },
+    {
+      "frame": 9,
+      "part": "f009-L",
+      "column": null,
+      "field": "marginal-addition",
+      "before": "。学",
+      "after": "。",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/8",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00008.tif/full/3600,/0/default.jpg",
+      "reason": "術右側可直接辨識一個小圈，現有畫質不足以辨認另一學字"
+    },
+    {
+      "frame": 10,
+      "part": "f010-R",
+      "column": 3,
+      "field": "responsibility",
+      "before": "明虞博編忘奎補遺",
+      "after": "明虞博編応奎補遺",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/9",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00009.tif/full/3600,/0/default.jpg",
+      "reason": "左支小字頂部左長撇作广，心底上部非亡"
+    },
+    {
+      "frame": 10,
+      "part": "f010-R",
+      "column": 4,
+      "field": "responsibility",
+      "before": "明聶尚恒撰",
+      "after": "明呉尚恒撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/9",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00009.tif/full/3600,/0/default.jpg",
+      "reason": "姓首上部未見疊耳，有短封口與分斜筆"
+    },
+    {
+      "frame": 11,
+      "part": "f011-L",
+      "column": null,
+      "field": "marginal-addition",
+      "before": "。四冊　。十冊",
+      "after": "。　。",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/10",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00010.tif/full/3600,/0/default.jpg",
+      "reason": "第2格、3格冊數右各見一小圈，冊數原字已列正文，圈本身沒有另寫數字"
+    },
+    {
+      "frame": 13,
+      "part": "f013-L",
+      "column": 3,
+      "field": "title",
+      "before": "魁生的鏡",
+      "after": "甦生的鏡",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/12",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00012.tif/full/3600,/0/default.jpg",
+      "reason": "首字右件立筆跨三橫作生，左件欹斜近更，未見鬼斗"
+    },
+    {
+      "frame": 13,
+      "part": "f013-L",
+      "column": 7,
+      "field": "title",
+      "before": "医確",
+      "after": "医碥",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/12",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00012.tif/full/3600,/0/default.jpg",
+      "reason": "石旁右件外戶框下有扁的兩短豎，未見隹的連橫"
+    },
+    {
+      "frame": 16,
+      "part": "f016-L",
+      "column": 3,
+      "field": "title",
+      "before": "証石山医学七書",
+      "after": "汪石山医学七書",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/15",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00015.tif/full/3600,/0/default.jpg",
+      "reason": "首字在界線內左側是短點三筆，右王豎貫三橫，可與作者汪機互對"
+    },
+    {
+      "frame": 17,
+      "part": "f017-R",
+      "column": 1,
+      "field": "title",
+      "before": "萬密斎全書",
+      "after": "萬蜜斎全書",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/16",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00016.tif/full/3600,/0/default.jpg",
+      "reason": "右首欄第二字底部封小口接彎鉤，未呈山的三豎，讀蜜"
+    },
+    {
+      "frame": 17,
+      "part": "f017-R",
+      "column": 1,
+      "field": "responsibility",
+      "before": "明萬全撰",
+      "after": "明万全撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/16",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00016.tif/full/3600,/0/default.jpg",
+      "reason": "明下字平起筆，下方延長弧線簡寫成万"
+    },
+    {
+      "frame": 17,
+      "part": "f017-L",
+      "column": 8,
+      "field": "responsibility",
+      "before": "清尤怡〃才維城〃",
+      "after": "清尤怡才維城〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/16",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00016.tif/full/3600,/0/default.jpg",
+      "reason": "右小列寫至怡，僅左小列維城下有重文符"
+    },
+    {
+      "frame": 18,
+      "part": "f018-L",
+      "column": 8,
+      "field": "responsibility",
+      "before": "唐王燾〃",
+      "after": "唐王壽〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/17",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00017.tif/full/3600,/0/default.jpg",
+      "reason": "文字圖像末字下為一連寫豎鉤，四點灬未見，依所見壽"
+    },
+    {
+      "frame": 20,
+      "part": "f020-L",
+      "column": 9,
+      "field": "title",
+      "before": "救急療飢易簡部方",
+      "after": "救急療食易簡部方",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/19",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00019.tif/full/3600,/0/default.jpg",
+      "reason": "療下字上作人形，字身連成一體，末筆無分立几部或貝旁兩足。"
+    },
+    {
+      "frame": 21,
+      "part": "f021-R",
+      "column": 1,
+      "field": "responsibility",
+      "before": "明謝鯤秀撰",
+      "after": "明謝毓秀撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/20",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00020.tif/full/3600,/0/default.jpg",
+      "reason": "謝下字左部更近母的格形，右下三筆近㐬，與魚加昆不同。"
+    },
+    {
+      "frame": 21,
+      "part": "f021-R",
+      "column": 6,
+      "field": "responsibility",
+      "before": "明呉昊編王秉賢續",
+      "after": "明呉昊編王来賢續",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/20",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00020.tif/full/3600,/0/default.jpg",
+      "reason": "王下面一字長交叉橫貫左右，下有木形八腳，無秉字中部持秉之筆。"
+    },
+    {
+      "frame": 21,
+      "part": "f021-R",
+      "column": 9,
+      "field": "responsibility",
+      "before": "明軟量隆〃",
+      "after": "明秋量隆〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/20",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00020.tif/full/3600,/0/default.jpg",
+      "reason": "首字左件禾的撇、豎和下兩足可辨，右件向外有灬式撇捺。"
+    },
+    {
+      "frame": 22,
+      "part": "f022-R",
+      "column": 3,
+      "field": "responsibility",
+      "before": "明王君賞撰",
+      "after": "明王君賓撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/21",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00021.tif/full/3600,/0/default.jpg",
+      "reason": "君下字上有宀形橫鉤，腹底貝，未見常／尚的雙點頭。"
+    },
+    {
+      "frame": 22,
+      "part": "f022-R",
+      "column": 5,
+      "field": "title",
+      "before": "重証本草單方",
+      "after": "重記本草單方",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/21",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00021.tif/full/3600,/0/default.jpg",
+      "reason": "重下左件言，右件向內回勾成己形，沒有止或丁下結構。"
+    },
+    {
+      "frame": 22,
+      "part": "f022-R",
+      "column": 10,
+      "field": "responsibility",
+      "before": "清浦士貞〃",
+      "after": "清郎延模〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/21",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00021.tif/full/3600,/0/default.jpg",
+      "reason": "清下首字右耳旁，次字下有廴右捺，末字木旁右草頭和大腳均可見。"
+    },
+    {
+      "frame": 22,
+      "part": "f022-L",
+      "column": 7,
+      "field": "responsibility",
+      "before": "清張中孚〃",
+      "after": "清張中華〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/21",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00021.tif/full/3600,/0/default.jpg",
+      "reason": "末字艹下多橫筆由同一長豎貫連，無爫配子的分節。"
+    },
+    {
+      "frame": 25,
+      "part": "f025-R",
+      "column": 3,
+      "field": "responsibility",
+      "before": "明寧源〃",
+      "after": "明寗源〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/24",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00024.tif/full/3600,/0/default.jpg",
+      "reason": "源上字底右半見用形框和中竪，不是獨立丁鉤。"
+    },
+    {
+      "frame": 25,
+      "part": "f025-L",
+      "column": null,
+      "field": "marginal-addition",
+      "before": "。二十二巻",
+      "after": "。　七",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/24",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00024.tif/full/3600,/0/default.jpg",
+      "reason": "第4格卷數八旁見空心圈，冊數原濃墨覆改右另寫小七。淡透背不足以判作二十二巻。"
+    },
+    {
+      "frame": 26,
+      "part": "f026-R",
+      "column": 6,
+      "field": "responsibility",
+      "before": "清程應旄撰",
+      "after": "清程應施撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/25",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00025.tif/full/3600,/0/default.jpg",
+      "reason": "應下面右件末有也的轉折和上挑，未見毛的垂撇。"
+    },
+    {
+      "frame": 26,
+      "part": "f026-L",
+      "column": 2,
+      "field": "title",
+      "before": "傷寒已脉",
+      "after": "傷寒己脉",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/25",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00025.tif/full/3600,/0/default.jpg",
+      "reason": "寒後上框下橫向左斷開，末筆起於下折，與已的上內收筆不同。"
+    },
+    {
+      "frame": 27,
+      "part": "f027-R",
+      "column": null,
+      "field": "marginal-addition",
+      "before": "。錦",
+      "after": "。",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/26",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00026.tif/full/3600,/0/default.jpg",
+      "reason": "第3格徐右有孤立小圈，鈔影中未見與此圈同層的錦字。"
+    },
+    {
+      "frame": 27,
+      "part": "f027-L",
+      "column": 8,
+      "field": "responsibility",
+      "before": "清王寒顏〃",
+      "after": "清王寒穎〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/26",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00026.tif/full/3600,/0/default.jpg",
+      "reason": "末字右頁，左邊下木形向兩旁伸開，沒有顏字的連續下彡。"
+    },
+    {
+      "frame": 27,
+      "part": "f027-L",
+      "column": 9,
+      "field": "responsibility",
+      "before": "明錢国賓撰",
+      "after": "明錢国賓〃",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/26",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00026.tif/full/3600,/0/default.jpg",
+      "reason": "賓下為近本半頁各欄相同的短兩點，不見撰字筆畫。"
+    },
+    {
+      "frame": 28,
+      "part": "f028-R",
+      "column": 1,
+      "field": "responsibility",
+      "before": "清蕭埈編",
+      "after": "清蕭塤編",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/27",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00027.tif/full/3600,/0/default.jpg",
+      "reason": "蕭下字土旁，右邊口形在框與貝足上，見員形。"
+    },
+    {
+      "frame": 29,
+      "part": "f029-R",
+      "column": 7,
+      "field": "responsibility",
+      "before": "明呉志申撰",
+      "after": "明呉志中撰",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/28",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00028.tif/full/3600,/0/default.jpg",
+      "reason": "志下字的口框只見中豎貫出，框內無申的加橫。早稻田大學藏《聿修堂藏書目》同題同人亦作吳志中，供旁證。"
+    },
+    {
+      "frame": 29,
+      "part": "f029-R",
+      "column": 10,
+      "field": "title",
+      "before": "枚偏瑣言",
+      "after": "救偏瑣言",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/28",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00028.tif/full/3600,/0/default.jpg",
+      "reason": "首字左旁中豎帶鉤，左右另有斜點，取从求從攵的救字。國書資料庫另本 300096845 同題，供旁證。"
+    },
+    {
+      "frame": 30,
+      "part": "f030-R",
+      "column": null,
+      "field": "marginal-addition",
+      "before": "。宝",
+      "after": "。宝　。",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/29",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00029.tif/full/3600,/0/default.jpg",
+      "reason": "頂欄上可見圈和宝；第五格題字第三字右另見一小圈。兩處同屬旁記，分置空格。"
+    },
+    {
+      "frame": 36,
+      "part": "f036-L",
+      "column": null,
+      "field": "collection-label",
+      "before": "",
+      "after": "左葉下方書口露出紙籤上緣，字身下半遮擋",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/35",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00035.tif/full/3600,/0/default.jpg",
+      "reason": "無版格護葉之下另露邊籤，維持護葉無原稿文字及零欄。"
+    },
+    {
+      "frame": 37,
+      "part": "f037-S",
+      "column": null,
+      "field": "collection-label",
+      "before": "背封黏貼側側僅餘部分館藏籤",
+      "after": "背封靠書脊底部可見館藏籤條殘片",
+      "canvas": "https://kokusho.nijl.ac.jp/biblio/300054644/canvas/36",
+      "image": "https://kokusho.nijl.ac.jp/api/iiif/300054644/v4/CBUL/CBUL-10244/CBUL-10244-00036.tif/full/3600,/0/default.jpg",
+      "reason": "紅格籤條跨書脊折入背封，小字裁邊不足辨全，位置可回查。"
     }
   ]
 }
